@@ -1,0 +1,11 @@
+project: savantenvs/yar
+target: fuzz_server
+
+cmds:
+  - cmd: /mayhem/mayhem/out-fuzz/fuzz_server
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_server/testsuite

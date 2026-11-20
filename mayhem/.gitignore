@@ -1,0 +1,3 @@
+# build.sh's out-of-tree build directories (removed by `git clean -ffdX`)
+/out-test/
+/out-fuzz/
